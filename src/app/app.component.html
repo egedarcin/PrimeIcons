@@ -1,10 +1,8 @@
-
-
 <body>
 
 <div>
   <ul>
-    <img src="primeiconblack.png">
+    <img src="../assets/images/logo.svg">
     <li><a href="#designerPack">DESIGNER PACK</a></li>
     <li><a href="#github">GITHUB</a></li>
     <li><a href="#support">SUPPORT</a></li>
@@ -12,195 +10,17 @@
   </ul>
 </div>
 
+<input [(ngModel)]="searchText" placeholder="Icon search">
+<span *ngIf="selectedIcon" class="{{selectedIcon.class}}">{{selectedIcon.class}}</span>
 
-
-
-<div class="grid-container" >
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let icon of icons| filter : searchText; let i = index ">
+    <i (click)="getIcon(i)" class="{{icon.class}}"></i>
   </div>
-
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-  <div class="grid-item">
-    <i class="pi pi-check"></i>
-  </div>
-
-
 </div>
 <div class="sticky">I am sticky!</div>
 
 <div>
-
   <ul>
     <img src="primeiconwhite.png">
     <li><a href="#designerPack">DESIGNER PACK</a></li>
@@ -210,4 +30,3 @@
   </ul>
 </div>
 </body>
-
