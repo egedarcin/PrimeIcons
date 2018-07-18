@@ -1,7 +1,7 @@
 
 body{
   background-color: #fdfdfd;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
 #list1 {
@@ -63,7 +63,6 @@ p.center{
   background-color: #ffffff;
   color: #333333;
   text-align: left;
-  margin-top: 50px;
   width: auto;
   max-width: 360px;
   border-radius: 4px;
@@ -76,6 +75,7 @@ input{
   height: 21px;
   max-width: 70%;
   outline: none;
+
 }
 #searchicon{
   padding-left: 3px ;
@@ -115,7 +115,7 @@ div.grid-item {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 25px;
+  font-size: 2em;
   color: #000000;
 }
 #iconslist:active{
@@ -132,7 +132,7 @@ div.grid-item {
   background-color: #323232;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
   max-width: 780px;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -141,6 +141,8 @@ div.grid-item {
   color: #ffffff;
   margin: auto;
 }
+
+
 
 #list2 {
   list-style-type: none;
