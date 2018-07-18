@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'app';
   icons:object[];
   selectedIcon:object;
+  iconCode= '';
   constructor(private service:IconService){}
   getIcons(){
     this.service.getIcons().subscribe((data:any)=>{
@@ -19,7 +20,13 @@ export class AppComponent implements OnInit {
   getIcon(index:number){
     this.selectedIcon=this.service.getIcon(index);
   }
+  getIconString(){
+    if(this.selectedIcon){
+      this.iconCode='<i class="'+this.selectedIcon.class+' "></i>';
+    }
+  }
   ngOnInit(){
   this.getIcons();
+  this.selectedIcon=this.service.getIcon(0);
   }
 }
