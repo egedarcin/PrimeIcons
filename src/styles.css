@@ -1,11 +1,7 @@
 * {
   box-sizing: border-box;
 }
-@media screen and (max-width: 700px) {
-  .grid-container {
-    grid-template-columns:  auto auto auto auto;
-  }
-}
+
 body{
   background-color: #fdfdfd;
   font-family: 'Poppins', sans-serif;
@@ -58,7 +54,6 @@ li a{
   transform: translateX(-50%);
   color: #ffffff;
   max-width: 516px;
-  font-family: Poppins;
 
 }
 h1.center{
@@ -199,6 +194,7 @@ div.grid-item {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
   margin-top: 2em;
   margin-bottom: 0px;
+  visibility: visible;
 
 }
 #primeimg2{
@@ -222,4 +218,13 @@ div.grid-item {
   position: relative;
   top: 30%;
   padding-left: 40px;
+}
+@media screen and (max-width: 741px) {
+  .grid-container {
+    grid-template-columns:  auto auto auto auto;
+    max-width: 300px;
+  }
+  #list2{
+    visibility: collapse;
+  }
 }
