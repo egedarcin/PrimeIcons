@@ -15,15 +15,16 @@ export class AppComponent implements OnInit {
   getIcons(){
     this.service.getIcons().subscribe((data:any)=>{
       this.icons=data;
+      this.icons.splice(-1,1);
     });
   }
-  getIcon(index:any){
-    this.selectedIcon=this.service.getIcon(index);
+  getIcon(id:any){
+    this.selectedIcon=this.service.getIcon(id);
     this.getIconString();
   }
   getIconString(){
     if(this.selectedIcon){
-      this.iconCode='<i class="'+this.selectedIcon.class+' "></i>';
+      this.iconCode='<i class="pi pi-'+this.selectedIcon.properties.name+'"></i>';
     }
   }
   ngOnInit(){
