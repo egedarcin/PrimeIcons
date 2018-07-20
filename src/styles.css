@@ -5,17 +5,24 @@
 body{
   background-color: #fdfdfd;
   font-family: 'Poppins', sans-serif;
+  margin:0px;
 }
 
 
-#list1 {
-
-  height: 60px;
-  background-color: #ffffff;
+#sizefixer{
+  padding-left:15%;
+  background-color: #fdfdfd;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+
+
+}
+#list1 {
+  width: 755px;
+  height: 60px;
   margin-bottom: 0px;
   margin-top: 0px;
   margin-left: 0px;
+
 }
 
 
@@ -119,6 +126,8 @@ div.grid-item:active {
   grid-gap: 20px;
   margin: auto;
   max-width: 620px;
+  min-height: 400px;
+
 
 }
 div.grid-item {
@@ -222,7 +231,7 @@ div.grid-item {
 
 
 
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 785px) {
 
   #primeimg1{
     float: none;
@@ -319,7 +328,7 @@ div.grid-item {
   }
 
 }
-@media screen and (min-width: 742px) {
+@media screen and (min-width: 786px) {
  #primeimg1{
    float: left;
    position: relative;
