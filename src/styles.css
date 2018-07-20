@@ -102,11 +102,11 @@ div.grid-item:hover {
   color: #000000;
 }
 
-div.grid-item:active {
+div.grid-item:active #iconslist{
   background-color: #2974d4;
   color: #ffffff;
 }
-div.grid-item:focus {
+div.grid-item:active {
   background-color: #2974d4;
   color: #ffffff;
 }
@@ -209,12 +209,14 @@ div.grid-item {
   line-height: normal;
   letter-spacing: normal;
   text-align: -moz-left;
+  font-family: Raleway, sans-serif;
   color: #ffffff;
   height: 48px;
   background-color: #2a2a2a;
   margin: 0px;
-  padding: 13px;
+  padding: 16px;
   padding-left: 25px;
+  font-size: 14px;
 
 }
 
