@@ -109,7 +109,6 @@ input{
   padding-left: 3px ;
 }
 #notfound{
-  height:300px;
   text-align: center;
 
 
@@ -363,7 +362,7 @@ div.grid-item {
   }
 
   #gridarea{
-    min-height: 1020px;
+    min-height: 500px;
   }
   #list1 {
     width: 780px;
