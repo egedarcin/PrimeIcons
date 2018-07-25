@@ -30,7 +30,7 @@ body{
   border-radius: 4px;
   padding: 1px 5px;
   position: relative;
-  top: -13px;
+  top: -12px;
 
 }
 ul{
@@ -137,6 +137,7 @@ div.grid-item:active {
   margin: auto;
   max-width: 620px;
   padding-bottom: 20px;
+  min-height: 300px;
 
 
 }

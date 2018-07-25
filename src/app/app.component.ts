@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IconService } from './service/icon.service';
 
 @Component({
@@ -6,6 +6,7 @@ import { IconService } from './service/icon.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   title = 'app';
   icons: object [];
@@ -26,6 +27,9 @@ export class AppComponent implements OnInit {
     if (this.selectedIcon) {
       this.iconCode = '<i class="pi pi-' + this.selectedIcon.properties.name + '"></i>';
     }
+  }
+  unselectIcon() {
+    this.selectedIcon = [];
   }
   ngOnInit() {
   this.getIcons();

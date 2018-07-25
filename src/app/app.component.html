@@ -16,7 +16,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container" (click)="unselectIcon()">
       <h1 class="center">Beautifully crafted open source icons</h1>
       <p class="center">Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font.
         Completely open source, MIT licensed.</p>
@@ -28,22 +28,24 @@
 
 
     <br>
-    <div id="gridarea">
+    <div id="gridarea" >
       <div *ngIf="(icons|filter:searchText).length===0">
         <div id="notfound">
           <h3>No results for "{{searchText}}"</h3>
-          <p> Not finding an icon that you want? <a href="https://github.com/primefaces/primeicons/issues/new">File an issue</a> and suggest a new icon.</p>
+          <p> Not finding an icon that you want? <a href="https://github.com/primefaces/primeicons/issues/new">
+            File an issue</a> and suggest a new icon.</p>
         </div>
       </div>
       <div class="grid-container" >
-        <div class="grid-item" *ngFor="let icon of icons| filter : searchText; let i = index " (click)="getIcon(icon.properties.id)" [style.backgroundColor]="icon===selectedIcon ? '#2974d4' :''" >
+        <div class="grid-item" *ngFor="let icon of icons| filter : searchText; let i = index "
+             (click)="getIcon(icon.properties.id)" [style.backgroundColor]="icon===selectedIcon ? '#2974d4' :''" >
           <i id="iconslist" class="pi pi-{{icon.properties.name}}" [style.color]="icon===selectedIcon ? '#ffffff' :''"></i>
         </div>
       </div>
     </div>
 
 
-    <div class="sticky" *ngIf="selectedIcon">
+    <div class="sticky" *ngIf="selectedIcon != []">
       <div id="leftsticky" >
             <span>
              {{selectedIcon.properties.name}}
