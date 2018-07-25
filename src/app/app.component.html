@@ -1,5 +1,5 @@
 <body>
-    <div id="sizefixer">
+    <div id="sizefixer" (click)="unselectIcon()">
       <div id="list1">
         <div id="primeimg1">
           <img src="../assets/images/logo-white.svg">
@@ -45,7 +45,7 @@
     </div>
 
 
-    <div class="sticky" *ngIf="selectedIcon != []">
+    <div class="sticky" *ngIf="selectedIcon">
       <div id="leftsticky" >
             <span>
              {{selectedIcon.properties.name}}
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div id="sizefixer2">
+    <div id="sizefixer2" (click)="unselectIcon()">
       <div id="list2">
         <div id= "primeimg2">
           <img  src="../assets/images/logo.png">
