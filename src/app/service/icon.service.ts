@@ -14,9 +14,10 @@ export class IconService {
         return this.icons;
     }));
   }
-  getIcon(id:any){
-    if(this.icons){
-      this.selectedIcon=this.icons.find(x => x.properties.id === id) as Object;
+  getIcon(id:any) {
+    if (this.icons) {
+      this.selectedIcon = this.icons.find(x => x.properties.id === id) as Object;
       return this.selectedIcon;
     }
+  }
 }

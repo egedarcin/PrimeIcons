@@ -9,13 +9,13 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   animations: [
     trigger('popOverState', [
       state('show', style({
-        opacity: 1
+        transform: 'translateY(0) scale(1)'
       })),
       state('hide',   style({
-        opacity: 0
+        transform: 'translateY(100%) scale(0)'
       })),
-      transition('show => hide', animate('300ms ease-out')),
-      transition('hide => show', animate('500ms ease-in'))
+      transition('show => hide', animate('150ms ease-out')),
+      transition('hide => show', animate('300ms ease-in'))
     ])
   ]
 })
