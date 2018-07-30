@@ -8,7 +8,7 @@
     </div>
     <ul>
       <li><a href="#designerPack">DESIGNER PACK</a></li>
-      <li><a href="#github">GITHUB</a></li>
+      <li><a href="https://github.com/primefaces/primeicons/">GITHUB</a>  </li>
       <li><a href="#support">SUPPORT</a></li>
       <li><a href="#usage">USAGE</a></li>
     </ul>
@@ -17,18 +17,16 @@
 
 
 <div class="container" (click)="unselectIcon()">
-  <h1 class="center">Beautifully crafted open source icons</h1>
-  <p class="center">Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font.
+  <h1 class="center ui-g-12">Beautifully crafted open source icons</h1>
+  <p class="center ui- g- 12">Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG and web font.
     Completely open source, MIT licensed.</p>
-  <div id="search" class="center" >
-    <i id="searchicon" class="pi pi-search"></i>
-    <input [(ngModel)]="searchText" placeholder="Search icons...">
+  <div id="search" class="center ui-g-12" >
+    <i id="searchicon" class="pi pi-search ui-g-1"></i>
+    <input class="ui-g-11" [(ngModel)]="searchText" placeholder="Search icons...">
   </div>
 </div>
-
-
 <br>
-<div id="gridarea">
+<div id="gridarea" class="ui-g">
   <div *ngIf="(icons|filter:searchText).length===0">
     <div id="notfound">
       <h3>No results for "{{searchText}}"</h3>
@@ -36,27 +34,30 @@
         File an issue</a> and suggest a new icon.</p>
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-item" *ngFor="let icon of icons| filter : searchText; let i = index "
+  <div class="ui-g-3 ui-g-nopad"></div>
+  <div id="gridcontainer" class="ui-g-6 ui-g-nopad">
+    <div class="ui-g-1 grid-item" *ngFor="let icon of icons| filter : searchText; let i = index "
          (click)="getIcon(icon.properties.id)" [style.backgroundColor]="icon===selectedIcon ? '#2974d4' :''" >
       <i id="iconslist" class="pi pi-{{icon.properties.name}}" [style.color]="icon===selectedIcon ? '#ffffff' :''"></i>
     </div>
   </div>
+  <div class="ui-g-3 ui-g-nopad"></div>
 </div>
 
 
   <div class="sticky" [@popOverState]="stateName">
-    <div id="leftsticky" >
+    <div id="leftsticky" class="ui-g-3 ui-sm-12" >
             <span>
              {{selectedIcon.properties.name}}
             </span>
   </div>
-  <code  id="midcode">
+  <code  id="midcode" class="ui-g-6 ui-sm-12">
     {{iconCode}}
   </code>
-  <div id="savebutton" >
-    <i class="pi pi-{{selectedIcon.properties.name}}"></i>
-    <i id="midline" class="pi pi-save">SVG</i>
+  <div id="savebutton"  class="ui-g-3 ui-sm-12">
+    <i id="icondisp" class="pi pi-{{selectedIcon.properties.name}}"></i>
+    <i id="saveicon" class="pi pi-save"></i>
+    <a id="svg"> SVG</a>
   </div>
 </div>
 <div id="footer" (click)="unselectIcon()">
