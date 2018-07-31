@@ -153,13 +153,10 @@ input {
   padding-bottom: 20px;
   display: flex;
   margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.flex-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
 
 .iconelement {
   width: 60px;
@@ -168,8 +165,7 @@ input {
   background-color: #fdfdfd;
   text-align: center;
   margin: 10px;
-
-  float: top;
+  float: none;
 }
 
 .icons {
