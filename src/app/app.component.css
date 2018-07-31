@@ -9,6 +9,7 @@
 .sizefixer{
   background-color: #fdfdfd;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  width: 100%;
 }
 
 .list1 {
@@ -61,6 +62,7 @@ li a{
   min-height: 316px;
   padding: auto;
   font-size: 28px;
+  width: 100%;
 }
 
 .headerhead{
