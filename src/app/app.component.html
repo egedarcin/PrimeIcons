@@ -1,4 +1,5 @@
 
+<div class="container">
 <div class="sizefixer" (click)="unselectIcon()">
   <div class="list1">
     <div class="primeimg1">
@@ -15,8 +16,7 @@
   </div>
 </div>
 
-
-<div class="container ui-g" (click)="unselectIcon()">
+<div class="headcontainer ui-g" (click)="unselectIcon()">
   <div class="ui-xl-4 ui-lg-3 ui-md-2 ui-sm-1"></div>
   <div class="ui-xl-4 ui-lg-6 ui-md-8 ui-sm-10 ui-g-nopad">
     <h1 class="headerhead">Beautifully crafted open source icons</h1>
@@ -29,7 +29,7 @@
   </div>
   <div class="ui-xl-4 ui-lg-3 ui-md-2 ui-sm-1"></div>
 </div>
-<br>
+
 <div class="ui-g">
   <div class="ui-xl-4 ui-lg-3 ui-md-2 ui-sm-1"></div>
   <div class="flex-container ui-xl-4 ui-lg-6 ui-md-8 ui-sm-10 ui-g-nopad">
@@ -40,27 +40,29 @@
           File an issue</a> and suggest a new icon.</p>
       </div>
     </div>
-      <div class="ui-g-1 iconelement" *ngFor="let icon of icons| filter : searchText; let i = index "
-           (click)="getIcon(icon.properties.id)" [style.backgroundColor]="icon===selectedIcon ? '#2974d4' :''" >
-        <i class="iconslist pi pi-{{icon.properties.name}}" [style.color]="icon===selectedIcon ? '#ffffff' :''"></i>
-      </div>
+    <div class="ui-g-1 iconelement" *ngFor="let icon of icons| filter : searchText; let i = index "
+         (click)="getIcon(icon.properties.id)" [style.backgroundColor]="icon===selectedIcon ? '#2974d4' :''" >
+      <i class="icons pi pi-{{icon.properties.name}}" [style.color]="icon===selectedIcon ? '#ffffff' :''"></i>
+    </div>
   </div>
   <div class="ui-xl-4 ui-lg-3 ui-md-2 ui-sm-1"></div>
 </div>
 
-
-  <div class="sticky" [@popOverState]="stateName">
-    <div class="leftsticky ui-g-3 ui-sm-12" >
-            <span>
-             {{selectedIcon.properties.name}}
-            </span>
+<div class="sticky" [@popOverState]="stateName">
+  <div class="leftsticky ui-g-3 ui-sm-12" >
+    <span>
+      {{selectedIcon.properties.name}}
+    </span>
   </div>
   <code class="midcode ui-g-8 ui-sm-12">
+    <span>
+      sdfsdffsdf
+    </span>
     {{iconCode}}
   </code>
-
 </div>
-<div class="footer" (click)="unselectIcon()">
+
+<div class="footer push" (click)="unselectIcon()">
   <div class="sizefixer2" >
     <div class="list2">
       <div class= "primeimg2">
@@ -77,5 +79,6 @@
   <div class="copybox">
     Powered by PrimeTek ©2009-2018.
   </div>
+</div>
 </div>
 

@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
   }
   getIconString() {
     if (this.selectedIcon) {
-      this.iconCode = '<i class="pi pi-' + this.selectedIcon.properties.name + '"></i>';
+      this.iconCode = this.selectedIcon.properties.name;
     }
   }
   unselectIcon() {
