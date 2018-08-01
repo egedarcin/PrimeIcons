@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
   selectedIcon: any;
   iconCode = '';
   show = false;
+  searchText: any;
 
   constructor(private service: IconService) {
   }
@@ -33,7 +34,6 @@ export class AppComponent implements OnInit {
   get stateName() {
     return this.show ? 'show' : 'hide';
   }
-
 
   getIcons() {
     this.service.getIcons().subscribe((data: any) => {

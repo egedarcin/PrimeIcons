@@ -228,7 +228,7 @@ input {
 
 .footer,
 .push {
-  height: 108px;
+  height: 0;
 }
 
 .sizefixer2 {
