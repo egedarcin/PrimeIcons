@@ -199,7 +199,6 @@ input {
   color: #ffffff;
   margin: auto;
   text-align: center;
-  transition: all linear 0.5s;
   z-index: 1;
 }
 
