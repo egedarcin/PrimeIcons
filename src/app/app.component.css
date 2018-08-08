@@ -134,6 +134,8 @@ input {
 
 .notfound {
   text-align: center;
+  margin: auto;
+  width: 100%;
 }
 
 .iconelement:hover {
@@ -148,16 +150,14 @@ input {
   color: #ffffff;
 }
 
-.flex-container {
+.grid-container {
   background-color: #fdfdfd;
   padding-bottom: 20px;
-  display: flex;
-  margin: auto;
+  display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 660px;
+  margin: auto;
 }
-
-
 .iconelement {
   width: 60px;
   height: 60px;
@@ -166,6 +166,7 @@ input {
   text-align: center;
   margin: 10px;
   float: none;
+  color: #000000;
 }
 
 .icons {
@@ -173,12 +174,8 @@ input {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2em;
-  color: #000000;
 }
 
-.icons:active {
-  color: #ffffff;
-}
 
 .sticky {
   position: -webkit-sticky;
@@ -294,19 +291,8 @@ input {
     padding-right: 10px;
   }
 
-  .list2 {
-    height: 130px;
-    display: inline-block;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .primeimg2 {
-    float: none;
-    height: auto;
-    max-width: 200px;
-    padding-left: 33px;
-    margin: 20px auto 25px;
+  .grid-container{
+    max-width: 340px;
   }
 
   .sticky {
@@ -339,7 +325,29 @@ input {
     text-align: -moz-center;
   }
 
+  .list2 {
+    height: 130px;
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .primeimg2 {
+    float: none;
+    height: auto;
+    max-width: 200px;
+    padding-left: 33px;
+    margin: 20px auto 25px;
+  }
+
 }
+
+@media screen and (max-width: 430px) {
+  .grid-container{
+    max-width: 260px;
+  }
+}
+
 
 @media screen and (min-width: 786px) {
   .primeimg1 {
