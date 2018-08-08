@@ -201,10 +201,10 @@ input {
 
 .leftsticky {
   float: left;
-  margin-left: 0.75em;
+  margin-left: 12%;
   font-size: 0.75em;
   position: relative;
-  top: 30%;
+  top: 36%;
 }
 
 .midcode {
@@ -214,6 +214,8 @@ input {
   border: solid 1px #979797;
   position: relative;
   top: 30%;
+  float: right;
+  margin-right: 12%;
 }
 
 .footer {
@@ -255,7 +257,7 @@ input {
   text-align: -webkit-center;
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 795px) {
   .primeimg1 {
     max-width: 200px;
     padding-left: 20px;
@@ -310,19 +312,21 @@ input {
     text-align: -moz-center;
     margin-left: 0;
     font-size: 1em;
-    position: static;
-    top: 0;
-    margin-top: 1%;
-
+    width: 100%;
+    top: 8px;
+    float: none;
+    margin-bottom: 20px;
   }
 
   .midcode {
-    margin-top: 0;
-    padding: 5px;
-    top: 0;
     text-align: center;
     text-align: -webkit-center;
     text-align: -moz-center;
+    width: 100%;
+    margin: auto;
+    top: 0;
+
+
   }
 
   .list2 {
@@ -349,11 +353,12 @@ input {
 }
 
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 795px) {
   .primeimg1 {
     float: left;
     position: relative;
     top: 25%;
+    margin-left: 1%;
   }
 
   .primeimg2 {

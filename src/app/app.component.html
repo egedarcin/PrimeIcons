@@ -36,7 +36,7 @@
         <p> Not finding an icon that you want? <a href="https://github.com/primefaces/primeicons/issues/new">
           File an issue</a> and suggest a new icon.</p>
     </div>
-      <div class="ui-g-12 grid-container">
+      <div class="ui-g-12 ui-g-nopad grid-container">
         <div class="ui-g-1 iconelement" *ngFor="let icon of icons| filter : searchText; let i = index "
              (click)="getIcon(icon.properties.id)" [style.backgroundColor]="icon===selectedIcon ? '#2974d4' :''">
           <i class="icons pi pi-{{icon.properties.name}}" [style.color]="icon===selectedIcon ? '#ffffff' :''"></i>
@@ -45,12 +45,12 @@
   </div>
 
   <div class="sticky" [@popOverState]="show ? 'visible':'hidden'">
-    <div class="leftsticky ui-g-3 ui-sm-12">
+    <div class="leftsticky">
     <span *ngIf="show">
       {{selectedIcon.properties.name}}
     </span>
     </div>
-    <code class="midcode ui-g-8 ui-sm-12">
+    <code class="midcode">
     <span>
       &lt;
     </span>
