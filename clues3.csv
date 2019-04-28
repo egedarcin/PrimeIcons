@@ -1,11 +1,11 @@
-rawClue,curID,target,source,type,result,response,avgCOPMI,maxPMI
-Quick boxing punch
-Kind of dream where you know you’re dreaming
-Move like a ghost
-Leading 2020 Democratic candidate
-Scrumptious
-"Louis-Dreyfus of ""Veep"""
-Vinegar and lemon juice
-Bathroom fixture more common in Europe than North America
-"Community celebrated during the month of June, for short"
-Refuse to admit
+curID,rawClue,target,source,type,result,response,avgCOPMI,maxPMI
+1,Quick boxing punch
+2,Kind of dream where you know you’re dreaming
+3,Move like a ghost
+4,Leading 2020 Democratic candidate
+5,Scrumptious
+6,Louis-Dreyfus of ""Veep"
+7,Vinegar and lemon juice
+8,Bathroom fixture more common in Europe than North America
+9,Community celebrated during the month of June, for short
+10,Refuse to admit
